@@ -1,5 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Comfortaa:wght@700&family=Quicksand:wght@700&display=swap');
 
-
-.container{
-    background-image: url('./images/home-bg.png');
+.container {
+    background-color: #C3AA94;
+    display: flex;
+    justify-content: center;
 }
+
+.info{
+    padding-top: 174px;
+    padding-right: 119px;
+}
+.title {
+    font-size: 72px;
+    width: 291px;
+    height: 170px;
+    font-family: 'ABeeZee', sans-serif;
+    color: white;
+    padding-bottom: 22px;
+    text-align: start;
+
+}
+
+.desc {
+    width: 443px;
+    height: 164px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 17;
+    text-align: start;
+    word-spacing: 1px;
+    color: white;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: 188px auto;
+    gap: 16px;
+    padding-bottom: 133px;
+}
+.hire-btn,
+.how-works{
+    border-radius: 5px;
+    font-family: 'Quicksand',sans-serif;
+    color: #534E4A;
+    cursor: pointer;
+}
+
+.hire-btn {
+    width: 188px;
+    height: 65px;
+    background-color: #FAD5A2;
+    border: none;
+}
+
+.how-works {
+    background-color: transparent;
+    border: 1px solid #534E4A;
+}
+
+.icons{
+    width: 240px;
+    height: 33px;
+    display: flex;
+    gap: 20px;
+}
+
+.icons i{
+    color: #534E4A;
+    font-size: 33px;
+    cursor: pointer;
+}
+
+.img-container {
+    padding-top: 85px;
+    padding-bottom: 45px;
+}
+
+
+@media screen AND (max-width: 1100px) {
+    .container{
+       height: 100vh;
+       flex-wrap: wrap;
+    }
+    .info{
+        padding-top: 120px;
+    }
+    .title {
+        font-size: 48px;    
+    }
+    
+}
+
+/* @media screen AND (max-width: 950px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        height: 100%;
+    }
+   
+    .info{
+       padding-top: 40px;
+       padding-right: 0;
+    }
+    .btn-container {
+        grid-template-columns: repeat(2,1fr);
+        gap: 6px;
+        padding-bottom: 33px;
+    }
+    .hire-btn {
+        width: auto;
+    }
+    .img-container {
+        padding-bottom: 85px;
+    }
+
+   
+} */
+
+
