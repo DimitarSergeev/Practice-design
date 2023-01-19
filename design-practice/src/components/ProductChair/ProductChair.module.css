@@ -1,0 +1,21 @@
+
+main{
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 1440px;
+    height: 1074px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2,1fr); */
+}
+
+.img-container{
+    background-color: white;
+}
+.info-container{
+    background-color: #2D2E32;
+}
