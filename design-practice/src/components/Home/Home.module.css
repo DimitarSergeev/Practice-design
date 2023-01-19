@@ -6,10 +6,11 @@
     justify-content: center;
 }
 
-.info{
+.info {
     padding-top: 174px;
     padding-right: 119px;
 }
+
 .title {
     font-size: 72px;
     width: 291px;
@@ -37,16 +38,16 @@
     gap: 16px;
     padding-bottom: 133px;
 }
+
 .hire-btn,
-.how-works{
+.how-works {
     border-radius: 5px;
-    font-family: 'Quicksand',sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: #534E4A;
     cursor: pointer;
 }
 
 .hire-btn {
-    width: 188px;
     height: 65px;
     background-color: #FAD5A2;
     border: none;
@@ -57,14 +58,14 @@
     border: 1px solid #534E4A;
 }
 
-.icons{
+.icons {
     width: 240px;
     height: 33px;
     display: flex;
     gap: 20px;
 }
 
-.icons i{
+.icons i {
     color: #534E4A;
     font-size: 33px;
     cursor: pointer;
@@ -76,46 +77,70 @@
 }
 
 
+
 @media screen AND (max-width: 1100px) {
-    .container{
-       height: 100vh;
-       flex-wrap: wrap;
+    .container {
+        height: 100vh;
+        flex-wrap: wrap;
     }
-    .info{
+
+    .info {
         padding-top: 120px;
     }
+
     .title {
-        font-size: 48px;    
+        font-size: 48px;
     }
-    
+
 }
 
-/* @media screen AND (max-width: 950px){
-    *{
+@media screen AND (max-width: 950px) {
+    * {
         margin: 0;
         padding: 0;
     }
-    .container{
+
+    .container {
         height: 100%;
     }
-   
-    .info{
-       padding-top: 40px;
-       padding-right: 0;
+
+    .info {
+        padding-top: 40px;
+        padding-right: 0;
     }
-    .btn-container {
-        grid-template-columns: repeat(2,1fr);
-        gap: 6px;
-        padding-bottom: 33px;
-    }
-    .hire-btn {
-        width: auto;
-    }
+
     .img-container {
         padding-bottom: 85px;
     }
+    .icons{
+        width: 100%;
+        justify-content: center;
+        gap: 48px;
+    }
 
-   
-} */
+}
 
-
+@media screen AND (max-width: 600px) {
+    
+    .title{
+        text-align: center;
+    }
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 12px 60px 12px;
+    }
+    .hire-btn,
+    .how-works {
+        height: 65px;
+        
+    }
+    .desc{
+        width: auto;
+        padding: 0px 12px;
+    }
+    .img-container img{
+        width: 60%;
+        padding-bottom: 20px;
+    }
+}

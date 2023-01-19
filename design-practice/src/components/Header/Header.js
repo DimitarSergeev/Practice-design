@@ -6,20 +6,14 @@ export const Header = () => {
     return (
 
         <header>
-            <ul className={styles.container}>
-                <li className={styles['nav-item']}>
-                    <NavLink to='/'>Landing Page</NavLink>
-                </li>
-                <li className={styles['nav-item']}>
-                    <NavLink to='/product-one'>Product One</NavLink>
-                </li>
-                <li className={styles['nav-item']}>
-                    <NavLink to='/product-two'>Product Two</NavLink>
-                </li>
-                <li className={styles['nav-item']}>
-                    <NavLink to='/form'>Form</NavLink>
-                </li>
-            </ul>
+
+            <div className={styles.container}>
+                <NavLink to='/' className={styles['nav-item']}>Landing Page</NavLink>
+                <NavLink to='/product-one' className={styles['nav-item']}>Product One</NavLink>
+                <NavLink to='/product-two' className={styles['nav-item']}>Product Two</NavLink>
+                <NavLink to='/form' className={styles['nav-item']}>Form </NavLink>
+            </div>
+
         </header>
 
     )

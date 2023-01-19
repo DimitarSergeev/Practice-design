@@ -16,15 +16,15 @@ header{
     grid-template-columns: repeat(4,1fr);
 
 }
+
 .nav-item{
     padding: 24px;
-}
-.nav-item a{
     font-size: 24px;
     font-family: 'Lobster',sans-serif;
     color: white;
     text-decoration: none;
 }
+
 
 
 
