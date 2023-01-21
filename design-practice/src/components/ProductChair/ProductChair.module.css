@@ -1,21 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&family=Roboto&family=Roboto+Mono:ital@1&display=swap');
 
-main{
-    background-color: #E5E5E5;
+/* background-color: #E5E5E5; */
+.container {
+    width: 1440px;
+    height: 1074px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.img-container {
+    background-color: white;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+
+
+.info-container {
+    background-color: #2D2E32;
+}
+
+.info-container {
+    padding: 80px;
+}
+
+.basic-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 90px;
+}
+
+.basic-info .type {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: #EDC42C;
+    padding-bottom: 31px;
+}
+
+.basic-info .title {
+    font-weight: bold;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 46px;
+    color: white;
+}
+
+.basic-info .title-desc {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 32px;
+    color: #B9B9B9;
+    padding-bottom: 16px;
+}
+
+.basic-info .price-rating {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.basic-info .price-rating .price {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: normal;
+    font-size: 52px;
+    color: white;
+}
+
+.basic-info .price-rating .rating-icons {
+    color: white;
+    display: flex;
+    font-size: 22px;
+    align-self: flex-end;
+    gap: 8px;
+}
+
+.basic-info .price-rating .rating-icons i:nth-child(5) {
+    color: rgba(87, 87, 91, 1);
+}
+
+.desc-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc-info {
+    padding-bottom: 55px;
+}
+
+.desc-container .desc-btns {
+    display: flex;
+    gap: 43px;
+    border-bottom: 2px solid #BDBCBC;
+}
+
+.desc-container .desc-btns .desc-btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    background-color: transparent;
+    border: none;
+    letter-spacing: none;
+    color: #BDBCBC;
+    padding-bottom: 21px;
+}
+
+.desc-container .desc-btns .desc-btn:hover {
+    color: white;
+}
+
+.desc-container .desc {
+    padding-top: 22px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: normal;
+    font-size: 26px;
+    text-align: start;
+    color: #BDBCBC;
+}
+
+.order-info {
+    display: flex;
+    padding-bottom: 54px;
+}
+
+
+.order-info .order-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.order-info .order-container label {
+    padding-bottom: 24px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+}
+
+.order-info .order-container .color-container {
+    width: 90px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #26272A;
+    display: flex;
+    justify-content: space-between;
+}
+
+.color {
+    background-color: #EDC42C;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.order-info .order-container .color-container select {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.order-info .order-container .quantity-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    background-color: #26272A;
+    border-radius: 50px;
+    width: 180px;
+    height: 60px;
+}
+
+
+.order-info .order-container .quantity-container .quantity-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 29px;
+    cursor: pointer;
+    color: #BDBCBC;
+    padding: 0px 12px;
+}
+
+.order-info .order-container .quantity-container .pices {
+    text-align: center;
+    align-self: center;
+    color: #BDBCBC;
+    font-size: 29px;
+}
+
+.order-info .order-container .total-container {
+    width: 100px;
+    height: 60px;
+    background-color: #26272A;
+    border-radius: 50px;
+    align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-.container{
-    width: 1440px;
-    height: 1074px;
-    /* display: grid; */
-    /* grid-template-columns: repeat(2,1fr); */
 }
 
-.img-container{
-    background-color: white;
+.order-info .order-container .total-container .total-price {
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    color: #BDBCBC;
 }
-.info-container{
-    background-color: #2D2E32;
+
+.action-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+
+.action-btns .action-wishList,
+.action-btns .action-add {
+    width: 578px;
+    height: 60px;
+    border-radius: 36px;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.action-btns .action-wishList{
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.action-btns .action-add{
+    background-color: #EDC42C;
+    color: #2D2E32;
+    border: none;
 }
