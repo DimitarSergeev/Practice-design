@@ -37,12 +37,12 @@ export const ProductChair = () => {
         <article className={styles.container} >
 
             <div className={styles['img-container']}>
-                <span className={styles.code}>RT34FY</span>
-                <SwiperChairs />
+                <span className={styles.code} data-testid='code'>RT34FY</span>
+                <SwiperChairs data-testid='swiper'/>
                 <div className="swiper-pagination"></div>
             </div>
 
-            <div className={styles['info-container']}>
+            <div className={styles['info-container']} data-testid='info-container'>
                 <div className={styles['basic-info']}>
                     <span className={styles.type}>Chairs</span>
                     <h1 className={styles.title}>Modern Yellow Chair</h1>
@@ -59,14 +59,14 @@ export const ProductChair = () => {
                     </div>
                 </div>
 
-                <div className={styles['desc-container']}>
+                <div className={styles['desc-container']} data-testid='desc-container'>
                     <div className={styles['desc-info']}>
                         <div className={styles['desc-btns']}>
                             <button className={styles['desc-btn']}>DESCRIPTION</button>
                             <button className={styles['desc-btn']}>DETAILS</button>
                             <button className={styles['desc-btn']}>COMMENTS</button>
                         </div>
-                        <p className={styles.desc}> Lorem ipsum dolor sit amet, consectetur
+                        <p className={styles.desc} data-testid='desc'> Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Sed sagittis quam ac nulla blandit
                             vehicula at vitae ipsum
                         </p>

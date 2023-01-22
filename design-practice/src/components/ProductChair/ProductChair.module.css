@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&family=Roboto&family=Roboto+Mono:ital@1&display=swap');
 
-/* background-color: #E5E5E5; */
+
 .container {
     width: 1440px;
     height: 1074px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 25px auto;
+    border: 1px #E5E5E5;
+    box-shadow: 0 0 10px 2px;
 }
 
 .img-container {
@@ -20,7 +23,7 @@
 .code{
     position: absolute;
     top: 150px;
-    left: 50px;
+    left: 100px;
     border: 1px solid #2D2E32;
     color: #2D2E32;
     border-radius: 12px;

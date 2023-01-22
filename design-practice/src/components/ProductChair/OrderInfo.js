@@ -16,9 +16,9 @@ export const OrderInfo = ({ onePicePrice, setOrderData }) => {
             color: color,
             totlaPrice: pices * onePicePrice
         })
-    }, [pices,color,onePicePrice,setOrderData])
+    }, [pices, color, onePicePrice, setOrderData])
 
-    
+
     return (
         <div className={styles['order-info']}>
             <div className={styles['order-container']}>
@@ -51,16 +51,20 @@ export const OrderInfo = ({ onePicePrice, setOrderData }) => {
                 <div className={styles['quantity-container']} id='quant'>
                     <button
                         className={styles['quantity-btn']}
-                        onClick={() => ( pices > 1 ? setPices(pices - 1) : '' )}
+                        onClick={() => (pices > 1 ? setPices(pices - 1) : '')}
+                        data-testid='decrement'
                     >
                         -
                     </button>
-                    <p className={styles.pices}>
+                    <p className={styles.pices}
+                        data-testid='pices'
+                    >
                         {pices}
                     </p>
                     <button
                         className={styles['quantity-btn']}
                         onClick={() => setPices(pices + 1)}
+                        data-testid='increment'
                     >
                         +
                     </button>
@@ -72,6 +76,7 @@ export const OrderInfo = ({ onePicePrice, setOrderData }) => {
                     <span
                         className={styles['total-price']}
                         id='totalPrice'
+                        data-testid='totalPrice'
                     >
                         ${pices * onePicePrice}
                     </span>
