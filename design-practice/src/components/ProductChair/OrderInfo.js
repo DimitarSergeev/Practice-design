@@ -17,6 +17,8 @@ export const OrderInfo = ({ onePicePrice, setOrderData }) => {
             totlaPrice: pices * onePicePrice
         })
     }, [pices,color,onePicePrice,setOrderData])
+
+    
     return (
         <div className={styles['order-info']}>
             <div className={styles['order-container']}>

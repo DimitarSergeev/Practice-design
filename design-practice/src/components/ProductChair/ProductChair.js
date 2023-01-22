@@ -1,16 +1,38 @@
 import styles from './ProductChair.module.css'
 
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
 import { SwiperChairs } from './SwiperChairs'
 import { OrderInfo } from './OrderInfo'
 import { useState } from 'react'
+
+import * as postService from '../../services/orderService'
 
 export const ProductChair = () => {
     const onePicePrice = 420
 
     const [orderData, setOrderData] = useState({})
 
-   
-console.log(orderData);
+    const MySwal = withReactContent(Swal)
+
+    const addTo = () => {
+        postService.postData(orderData)
+            .then(() => {
+                MySwal.fire({
+                    title: <strong>Good job!</strong>,
+                    html: <i>The product has been added!</i>,
+                    icon: 'success'
+                })
+            })
+            .catch(() => {
+                MySwal.fire({
+                    title: <strong>Someting went wrong ! </strong>,
+                    icon: 'error'
+                })
+            })
+    }
+
     return (
         <article className={styles.container} >
 
@@ -56,8 +78,8 @@ console.log(orderData);
                     />
 
                     <div className={styles['action-btns']}>
-                        <button className={styles['action-wishList']}>ADD TO MY WISHLIST</button>
-                        <button className={styles['action-add']}>ADD TO CART</button>
+                        <button className={styles['action-wishList']} onClick={addTo}>ADD TO MY WISHLIST</button>
+                        <button className={styles['action-add']} onClick={addTo}>ADD TO CART</button>
                     </div>
                 </div>
             </div>
