@@ -17,7 +17,18 @@
     align-self: center;
 }
 
-
+.code{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    border: 1px solid #2D2E32;
+    color: #2D2E32;
+    border-radius: 12px;
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+    padding: 9px 18px;
+    opacity: 0.5;
+}
 
 .info-container {
     background-color: #2D2E32;

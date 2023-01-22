@@ -1,15 +1,22 @@
 import styles from './ProductChair.module.css'
 
 import { SwiperChairs } from './SwiperChairs'
-
+import { OrderInfo } from './OrderInfo'
+import { useState } from 'react'
 
 export const ProductChair = () => {
+    const onePicePrice = 420
+
+    const [orderData, setOrderData] = useState({})
+
+   
+console.log(orderData);
     return (
         <article className={styles.container} >
 
             <div className={styles['img-container']}>
                 <span className={styles.code}>RT34FY</span>
-                <SwiperChairs className={styles['swiper-conainer']} />
+                <SwiperChairs />
                 <div className="swiper-pagination"></div>
             </div>
 
@@ -43,33 +50,10 @@ export const ProductChair = () => {
                         </p>
                     </div>
 
-                    <div className={styles['order-info']}>
-                        <div className={styles['order-container']}>
-                            <label htmlFor="color">COLOR</label>
-                            <div className={styles['color-container']}>
-                                <span className={styles.color}></span>
-                                <select name="color" id="color">
-                                    <option value="yellow" style={{ "background-color": "#ffff00" }}></option>
-                                    <option value="green" style={{ "background-color": "#00ff00" }}></option>
-                                    <option value="#ff0000" style={{ "background-color": "#ff0000" }}></option>
-                                </select>
-                            </div>
-                        </div>
-                        <div className={styles['order-container']}>
-                            <label htmlFor="quant">QUANTITY</label>
-                            <div className={styles['quantity-container']} id='quant'>
-                                <button className={styles['quantity-btn']}>-</button>
-                                <p className={styles.pices}>2</p>
-                                <button className={styles['quantity-btn']}>+</button>
-                            </div>
-                        </div>
-                        <div className={styles['order-container']}>
-                            <label htmlFor="totlaPrice">TOTAL PRICE</label>
-                            <div className={styles['total-container']}>
-                                <span className={styles['total-price']} id='totlaPrice'>$840</span>
-                            </div>
-                        </div>
-                    </div>
+                    <OrderInfo
+                        onePicePrice={onePicePrice}
+                        setOrderData={setOrderData}
+                    />
 
                     <div className={styles['action-btns']}>
                         <button className={styles['action-wishList']}>ADD TO MY WISHLIST</button>
