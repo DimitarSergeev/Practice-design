@@ -12,8 +12,8 @@
  -> cd design-practice
  -> npm i 
 
-   --- to start app : npm start --- 
-   --- to run test : npm run test --- 
+-  --- to start app : npm start --- 
+-  --- to run test : npm run test --- 
 
 ***
 ## Design
