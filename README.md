@@ -12,7 +12,9 @@
  -> cd design-practice
  -> npm i 
 
-   --- to start app npm start --- 
+   --- to start app : npm start --- 
+   --- to run test : npm run test --- 
+
 ***
 ## Design
 Landing Page : https://www.figma.com/file/uyl0seVHjR5dfFKPTAodUc/Home-page-(Community)?node-id=0%3A1&t=md2YggZiWJJqs6OX-0
