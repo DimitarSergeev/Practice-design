@@ -16,14 +16,10 @@
     display: flex;
     width: 600px;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
+    justify-content: space-evenly;
 }
 
 .code{
-    position: absolute;
-    top: 150px;
-    left: 100px;
     border: 1px solid #2D2E32;
     color: #2D2E32;
     border-radius: 12px;
@@ -31,15 +27,15 @@
     font-size: 18px;
     padding: 9px 18px;
     opacity: 0.5;
+    align-self: flex-start;
+    margin: 0px 0px 50px 50px;
 }
 
 .info-container {
     background-color: #2D2E32;
-}
-
-.info-container {
     padding: 80px;
 }
+
 
 .basic-info {
     display: flex;
